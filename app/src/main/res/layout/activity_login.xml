@@ -6,56 +6,51 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="40dp"
-    tools:context=".Principal">
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="match_parent"
-        android:layout_height="214dp"
-        android:layout_marginTop="40dp"
-        app:srcCompat="@drawable/pyg1" />
+    tools:context=".Login">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:layout_marginTop="5dp"
-        android:text="Correo electronico" />
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:text="Bienvenido" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/editTextTextEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Ingrese su correo electronico"
+        android:layout_marginTop="20dp"
+        android:hint="Usuario o correo electronico"
         android:inputType="textEmailAddress" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="Contraseña" />
-
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/editTextTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Ingrese su contraseña"
+        android:layout_marginTop="20dp"
+        android:hint="Contraseña"
         android:inputType="textPassword" />
 
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:layout_marginTop="10dp"
+        android:text="Has olvidado la contraseña?" />
+
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button"
+        android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:backgroundTint="@android:color/holo_orange_dark"
         android:text="Iniciar Sesion"
         app:icon="@drawable/login"
         app:iconGravity="textEnd"
         />
-
 </LinearLayout>
