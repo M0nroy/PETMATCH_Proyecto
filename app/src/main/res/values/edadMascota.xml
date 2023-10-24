@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="edadMascota">
+        <item>2 años</item>
+        <item>3 años</item>
+        <item>4 años</item>
+    </string-array>
+</resources>

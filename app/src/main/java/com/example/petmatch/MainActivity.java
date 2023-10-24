@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 finish();
-                Intent objVentana = new Intent(MainActivity.this, registrarse.class);
+                Intent objVentana = new Intent(MainActivity.this, Informacion_mascota.class);
                 startActivity(objVentana);
             }
         }, 3000);
