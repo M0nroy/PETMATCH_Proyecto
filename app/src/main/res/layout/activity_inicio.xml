@@ -9,6 +9,12 @@
     android:padding="40dp"
     tools:context=".inicio">
 
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        app:srcCompat="@drawable/dog"
+        android:layout_marginTop="100dp"/>
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
@@ -16,7 +22,7 @@
         android:textAlignment="center"
         android:textSize="40dp"
         android:textColor="@color/black"
-        android:layout_marginTop="200dp"
+
         android:text="PetMatch" />
 
     <TextView
@@ -29,23 +35,36 @@
         android:layout_marginTop="5dp"
         android:text="Encuentra el alma gemela de tu mascota" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Iniciar Sesión"
-        app:icon="@drawable/login"
-        app:iconGravity="textEnd"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnResgis"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:text="Registrarse"
-        app:icon="@drawable/resgister"
-        app:iconGravity="textEnd"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="8dp"
+            android:text="Iniciar Sesión"
+            app:icon="@drawable/login"
+            app:iconGravity="textEnd"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button14"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Registrarse"
+            app:icon="@drawable/resgister"
+            app:iconGravity="textEnd"/>
+    </LinearLayout>
+
+
+
 
 </LinearLayout>
