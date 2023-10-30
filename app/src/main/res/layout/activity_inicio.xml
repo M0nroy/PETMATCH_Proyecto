@@ -47,7 +47,7 @@
             android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginRight="3dp"
             android:text="Iniciar Sesión"
             app:icon="@drawable/login"
             app:iconGravity="textEnd"/>
@@ -58,7 +58,7 @@
             android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:layout_marginLeft="15dp"
+
             android:text="Registrarse"
             app:icon="@drawable/resgister"
             app:iconGravity="textEnd"/>

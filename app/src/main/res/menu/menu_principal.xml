@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/inicio"
+        android:title="Inicio"
+        android:icon="@drawable/home" />
+    <item
+        android:id="@+id/mi_mascota"
+        android:title="Mi mascota"
+        android:icon="@drawable/pets" />
+    <item
+        android:id="@+id/mi_perfil"
+        android:title="Mi perfil"
+        android:icon="@drawable/person" />
+    <item
+        android:id="@+id/salir"
+        android:title="Salir"
+        android:icon="@drawable/exit" />
+</menu>
