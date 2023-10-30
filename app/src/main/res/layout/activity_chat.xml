@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9DCED3"
     android:orientation="vertical"
     android:padding="5sp"
     tools:context=".Chat">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/fotoPerfil"
             android:layout_width="48sp"
@@ -25,19 +24,23 @@
             android:layout_gravity="center"
             android:text="Monroy"/>
     </LinearLayout>
-    
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMensajes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1">
     </androidx.recyclerview.widget.RecyclerView>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
+        
+        <ImageButton
+            android:id="@+id/btnEnviarFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/image"
+            android:layout_gravity="center"/>
         <EditText
             android:id="@+id/txtMensaje"
             android:layout_width="match_parent"
@@ -50,10 +53,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:iconGravity="textEnd"
-            app:icon="@drawable/send"
-            >
-
+            android:backgroundTint="@android:color/holo_orange_dark"
+            app:icon="@drawable/send">
         </com.google.android.material.button.MaterialButton>
     </LinearLayout>
-
 </LinearLayout>

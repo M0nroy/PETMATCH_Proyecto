@@ -1,6 +1,7 @@
 package com.example.petmatch;
 
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -11,14 +12,16 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class HolderMensaje extends RecyclerView.ViewHolder {
 
     private TextView nombre, mensaje, hora;
-    private CircleImageView fotoMensaje;
+    private CircleImageView fotoMensajePerfil;
+    private ImageView fotoMensaje;
     public HolderMensaje(@NonNull View itemView) {
         super(itemView);
 
         nombre = (TextView) itemView.findViewById(R.id.nombreMensaje);
         mensaje = (TextView) itemView.findViewById(R.id.mensajeMensaje);
         hora = (TextView) itemView.findViewById(R.id.horaMensaje);
-        fotoMensaje = (CircleImageView) itemView.findViewById(R.id.fotoPerfilMensaje);
+        fotoMensajePerfil = (CircleImageView) itemView.findViewById(R.id.fotoPerfilMensaje);
+        fotoMensaje = (ImageView) itemView.findViewById(R.id.mensajeFoto);
     }
 
     public TextView getNombre() {
@@ -45,11 +48,19 @@ public class HolderMensaje extends RecyclerView.ViewHolder {
         this.hora = hora;
     }
 
-    public CircleImageView getFotoMensaje() {
+    public CircleImageView getFotoMensajePerfil() {
+        return fotoMensajePerfil;
+    }
+
+    public void setFotoMensajePerfil(CircleImageView fotoMensajePerfil) {
+        this.fotoMensajePerfil = fotoMensajePerfil;
+    }
+
+    public ImageView getFotoMensaje() {
         return fotoMensaje;
     }
 
-    public void setFotoMensaje(CircleImageView fotoMensaje) {
+    public void setFotoMensaje(ImageView fotoMensaje) {
         this.fotoMensaje = fotoMensaje;
     }
 }
