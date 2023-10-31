@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/icon"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -15,47 +16,47 @@
         android:layout_marginTop="40dp"
         app:srcCompat="@drawable/pyg1" />
 
-    <TextView
-        android:id="@+id/textView"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:layout_marginTop="5dp"
-        android:text="Correo electronico" />
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/person"
+        app:startIconTint="#FF8800">
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Ingrese su correo electronico"
-        android:inputType="textEmailAddress" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electronico"
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="Contraseña" />
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/editTextTextPassword2"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Ingrese su contraseña"
-        android:inputType="textPassword" />
+        app:boxBackgroundMode="outline"
+        app:endIconMode="password_toggle"
+        app:endIconTint="#FF8800"
+        app:startIconDrawable="@drawable/lock"
+        app:startIconTint="#FF8800">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:layout_gravity="center"
+        android:layout_marginTop="5dp"
         android:backgroundTint="@android:color/holo_orange_dark"
         android:text="Iniciar Sesion"
         app:icon="@drawable/login"
-        app:iconGravity="textEnd"
-        />
+        app:iconGravity="textEnd" />
 
 </LinearLayout>

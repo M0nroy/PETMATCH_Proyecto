@@ -30,25 +30,27 @@
             android:layout_height="wrap_content"
             android:text="Gato" />
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Raza" />
+        </com.google.android.material.textfield.TextInputLayout>
+
     </RadioGroup>
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:inputType="text"
-        android:hint="Nombre" />
-
-    <EditText
-        android:id="@+id/editTextText5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:ems="10"
-        android:inputType="text"
-        android:hint="Raza" />
 
     <RadioGroup
         android:layout_width="match_parent"

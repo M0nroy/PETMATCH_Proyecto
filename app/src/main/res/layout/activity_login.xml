@@ -16,23 +16,37 @@
         android:textSize="25dp"
         android:text="Bienvenido" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginTop="20dp"
-        android:hint="Usuario o correo electronico"
-        android:inputType="textEmailAddress" />
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/person"
+        app:startIconTint="#FF8800">
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electronico"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginTop="20dp"
-        android:hint="Contraseña"
-        android:inputType="textPassword" />
+        app:boxBackgroundMode="outline"
+        app:endIconMode="password_toggle"
+        app:endIconTint="#FF8800"
+        app:startIconDrawable="@drawable/lock"
+        app:startIconTint="#FF8800">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textView9"

@@ -14,13 +14,16 @@
         android:layout_height="195dp"
         app:srcCompat="@drawable/pyg" />
 
-    <EditText
-        android:id="@+id/editTextText3"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Ingrese su nombre"
-        android:inputType="text"/>
+        app:startIconDrawable="@drawable/pets">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su nombre" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textView10"
@@ -35,23 +38,20 @@
         android:layout_height="wrap_content"
         android:entries="@array/ciudad"/>
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Ingrese fecha de nacimiento" />
-
-    <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="date" />
-
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:startIconDrawable="@drawable/date">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese su fecha de nacimiento" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <RadioButton
             android:id="@+id/radioButton"
@@ -70,6 +70,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="75dp"
+
         app:icon="@drawable/next"
         app:iconGravity="textEnd"
         android:text="Siguiente"/>

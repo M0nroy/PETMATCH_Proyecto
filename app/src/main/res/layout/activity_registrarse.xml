@@ -16,41 +16,71 @@
         android:textSize="30dp"
         android:text="Crear Cuenta" />
 
-    <EditText
-        android:id="@+id/editTextText"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginTop="10dp"
-        android:inputType="text"
-        android:text="Ingrese su nombre" />
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/person"
+        app:startIconTint="#FF8800">
 
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginTop="10dp"
-        android:inputType="text"
-        android:text="Ingrese su apellido" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/box3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginTop="10dp"
-        android:hint="Ingrese su correo electronico"
-        android:inputType="textEmailAddress" />
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/editTextTextPassword3"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginTop="10dp"
-        android:hint="Ingrese su contraseña"
-        android:inputType="textPassword" />
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/person"
+        app:startIconTint="#FF8800">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/box4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellido"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/person"
+        app:startIconTint="#FF8800">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electronico"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        app:endIconMode="password_toggle"
+        app:endIconTint="#FF8800"
+        app:startIconDrawable="@drawable/lock"
+        app:startIconTint="#FF8800">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
          android:id="@+id/btResgistrase"

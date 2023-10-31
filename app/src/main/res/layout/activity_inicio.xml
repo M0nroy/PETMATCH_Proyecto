@@ -22,7 +22,6 @@
         android:textAlignment="center"
         android:textSize="40dp"
         android:textColor="@color/black"
-
         android:text="PetMatch" />
 
     <TextView

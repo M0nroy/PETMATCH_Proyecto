@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 finish();
-                Intent objVentana = new Intent(MainActivity.this, Chat.class);
+                Intent objVentana = new Intent(MainActivity.this, inicio.class);
                 startActivity(objVentana);
             }
         }, 3000);
