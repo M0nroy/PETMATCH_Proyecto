@@ -25,7 +25,7 @@
         app:startIconTint="#FF8800">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/box3"
+            android:id="@+id/etNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nombre"
@@ -42,7 +42,7 @@
         app:startIconTint="#FF8800">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/box4"
+            android:id="@+id/etApellido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Apellido"
@@ -59,7 +59,7 @@
         app:startIconTint="#FF8800">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/box"
+            android:id="@+id/etCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Correo electronico"
@@ -77,21 +77,22 @@
         app:startIconTint="#FF8800">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Contraseña" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-         android:id="@+id/btResgistrase"
+         android:id="@+id/btResgistrarse"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:text="Registrarse"
          android:layout_marginTop="10dp"
          android:layout_gravity="center"
          app:icon="@drawable/resgister"
+         android:onClick="registrarse"
          app:iconGravity="textEnd"
-        android:backgroundTint="@android:color/holo_orange_dark"
-         />
+         android:backgroundTint="@android:color/holo_orange_dark"/>
 
 </LinearLayout>
