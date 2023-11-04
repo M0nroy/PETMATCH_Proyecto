@@ -83,6 +83,7 @@
             android:layout_weight="1"
             android:layout_marginTop="7dp"
             android:layout_marginStart="8dp"
+            android:onClick="omitir"
             android:text="Omitir"
             app:icon="@drawable/skip"
             app:iconGravity="textEnd"

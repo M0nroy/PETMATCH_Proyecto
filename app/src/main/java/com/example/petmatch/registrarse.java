@@ -3,6 +3,7 @@ package com.example.petmatch;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -56,6 +57,9 @@ public class registrarse extends AppCompatActivity {
             Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show();
             limpiarCampos();
             db.close();
+
+            Intent proposito = new Intent(this, Proposito.class);
+            startActivity(proposito);
         } else {
             Toast.makeText(this, "Error al registrarse", Toast.LENGTH_SHORT).show();
         }

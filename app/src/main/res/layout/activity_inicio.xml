@@ -48,6 +48,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginRight="3dp"
             android:text="Iniciar Sesión"
+            android:onClick="iniciarSesion"
             app:icon="@drawable/login"
             app:iconGravity="textEnd"/>
 
@@ -57,6 +58,7 @@
             android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
+            android:onClick="registraseU"
             android:text="Registrarse"
             app:icon="@drawable/resgister"
             app:iconGravity="textEnd"/>
