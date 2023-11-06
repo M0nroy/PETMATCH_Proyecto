@@ -1,4 +1,4 @@
-package com.example.petmatch;
+package com.example.petmatch.db;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
