@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="40dp"
+    android:background="@drawable/font2"
     tools:context=".Login">
 
     <TextView
@@ -14,6 +15,7 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:textSize="25dp"
+        android:layout_marginTop="260dp"
         android:text="Bienvenido" />
 
     <com.google.android.material.textfield.TextInputLayout
