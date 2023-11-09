@@ -97,6 +97,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:onClick="mejoresMomentos"
+        android:backgroundTint="#F77C63"
         android:text="Siguiente"
         app:iconGravity="textEnd"
         app:icon="@drawable/next"

@@ -22,7 +22,7 @@
         app:boxBackgroundMode="outline"
         app:endIconMode="clear_text"
         app:startIconDrawable="@drawable/person"
-        app:startIconTint="#FF8800">
+        app:startIconTint="#f77c63">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/box"
@@ -38,9 +38,9 @@
         android:layout_height="wrap_content"
         app:boxBackgroundMode="outline"
         app:endIconMode="password_toggle"
-        app:endIconTint="#FF8800"
+        app:endIconTint="#f77c63"
         app:startIconDrawable="@drawable/lock"
-        app:startIconTint="#FF8800">
+        app:startIconTint="#f77c63">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -62,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
-        android:backgroundTint="@android:color/holo_orange_dark"
+        android:backgroundTint="#F77C63"
         android:text="Iniciar Sesion"
         app:icon="@drawable/login"
         app:iconGravity="textEnd"
