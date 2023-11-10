@@ -12,17 +12,9 @@
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="match_parent"
-        android:layout_height="106dp"
-        app:srcCompat="@drawable/dog"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/logopet"
         android:layout_marginTop="100dp"/>
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="40dp"
-        android:textColor="@color/black"
-        android:text="PetMatch" />
 
     <TextView
         android:id="@+id/textView5"

@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="100dp"
     android:padding="40dp"
+    android:background="@drawable/font1"
     tools:context=".Proposito" >
 
     <TextView
@@ -14,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
+        android:layout_marginTop="100dp"
         android:textSize="30dp"
         android:text="¿Cuál es su propósito en la aplicación?" />
 
@@ -22,6 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
+        android:backgroundTint="#F77C63"
         android:text="Reunirme" />
 
     <Button
@@ -29,10 +31,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:backgroundTint="#F77C63"
         android:text="Reunir mi mascota" />
 
     <Button
         android:id="@+id/button6"
+        android:backgroundTint="#F77C63"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -43,6 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:backgroundTint="#F77C63"
         app:icon="@drawable/next"
         app:iconGravity="textEnd"
         android:text="Siguiente"/>

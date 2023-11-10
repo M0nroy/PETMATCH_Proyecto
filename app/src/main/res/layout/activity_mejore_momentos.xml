@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="40dp"
+    android:background="@drawable/font1"
     tools:context=".Mejore_momentos">
 
     <TextView
@@ -73,7 +74,7 @@
             android:layout_weight="1"
             android:layout_marginEnd="8dp"
             android:text="Seleccionar imagen"
-            android:backgroundTint="@android:color/holo_orange_dark"
+            android:backgroundTint="#F77C63"
             app:icon="@drawable/image"
             app:iconGravity="textEnd" />
 
@@ -87,7 +88,7 @@
             android:text="Omitir"
             app:icon="@drawable/skip"
             app:iconGravity="textEnd"
-            android:backgroundTint="@android:color/holo_orange_dark"/>
+            android:backgroundTint="#F77C63"/>
     </LinearLayout>
 
 </LinearLayout>

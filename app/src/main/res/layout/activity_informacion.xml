@@ -6,18 +6,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="40dp"
+    android:layout_marginTop="-50dp"
+    android:background="@drawable/font2"
     tools:context=".Informacion">
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
-        android:layout_height="195dp"
-        app:srcCompat="@drawable/pyg" />
+        android:layout_height="170dp"
+        android:layout_marginTop="200dp"
+        app:srcCompat="@drawable/people" />
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:startIconDrawable="@drawable/pets">
+        app:startIconDrawable="@drawable/person">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -71,7 +75,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="75dp"
         android:onClick="infoMascota"
-        android:backgroundTint="#F77C63"
         app:icon="@drawable/next"
         app:iconGravity="textEnd"
         android:text="Siguiente"/>

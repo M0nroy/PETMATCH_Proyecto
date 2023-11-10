@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="40dp"
+    android:background="@drawable/font1"
     tools:context=".Interes">
 
     <TextView
@@ -14,12 +15,14 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:textSize="25dp"
+        android:layout_marginTop="90dp"
         android:text="¿Me interesan?" />
 
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:backgroundTint="#F77C63"
         android:text="Hombre"
         app:iconGravity="textEnd"
         app:icon="@drawable/man"
@@ -28,6 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:backgroundTint="#F77C63"
         android:text="Mujer"
         app:iconGravity="textEnd"
         app:icon="@drawable/woman"
@@ -37,6 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:backgroundTint="#F77C63"
         android:text="Ambos"
         app:iconGravity="textEnd"
         app:icon="@drawable/twice"
@@ -46,6 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:backgroundTint="#F77C63"
         android:text="Siguiente"
         app:iconGravity="textEnd"
         app:icon="@drawable/next"
