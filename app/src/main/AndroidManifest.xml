@@ -13,6 +13,9 @@
         android:theme="@style/Theme.PETMATCH"
         tools:targetApi="31">
         <activity
+            android:name=".PerfilMascota"
+            android:exported="false" />
+        <activity
             android:name=".VerUsuarios"
             android:exported="false" />
         <activity

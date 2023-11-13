@@ -27,17 +27,17 @@
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="104dp"
+            android:layout_height="match_parent"
             android:layout_marginEnd="10dp"
-            app:srcCompat="@drawable/image" />
+            android:layout_weight="1"
+            app:srcCompat="@drawable/fq1" />
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="104dp"
-            app:srcCompat="@drawable/image" />
+            app:srcCompat="@drawable/fw" />
     </LinearLayout>
 
     <LinearLayout
@@ -52,14 +52,14 @@
             android:layout_weight="1"
             android:layout_height="104dp"
             android:layout_marginEnd="10dp"
-            app:srcCompat="@drawable/image" />
+            app:srcCompat="@drawable/srg" />
 
         <ImageView
             android:id="@+id/imageView7"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="104dp"
-            app:srcCompat="@drawable/image" />
+            app:srcCompat="@drawable/tt" />
     </LinearLayout>
 
     <LinearLayout
@@ -71,24 +71,24 @@
         <com.google.android.material.button.MaterialButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#F77C63"
             android:text="Seleccionar imagen"
-            android:backgroundTint="@android:color/holo_orange_dark"
             app:icon="@drawable/image"
             app:iconGravity="textEnd" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="0dp"
             android:layout_height="55dp"
-            android:layout_weight="1"
-            android:layout_marginTop="7dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:backgroundTint="#F77C63"
             android:onClick="omitir"
             android:text="Omitir"
             app:icon="@drawable/skip"
-            app:iconGravity="textEnd"
-            android:backgroundTint="@android:color/holo_orange_dark"/>
+            app:iconGravity="textEnd" />
     </LinearLayout>
 
 </LinearLayout>

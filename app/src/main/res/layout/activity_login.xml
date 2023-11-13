@@ -62,11 +62,11 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_gravity="center"
-        android:backgroundTint="@android:color/holo_orange_dark"
-        android:text="Iniciar Sesion"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#F77C63"
+        android:text="@string/iniciar_sesion"
         app:icon="@drawable/login"
         app:iconGravity="textEnd"
-        />
+        android:onClick="ValidarInicio"/>
 </LinearLayout>
