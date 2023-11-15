@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9DCED3"
+    android:background="@drawable/font1"
     android:orientation="vertical"
     android:padding="5sp"
     tools:context=".Chat">
@@ -22,7 +22,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Monroy"/>
+            android:textColor="@color/white"
+            android:text="Juan Perez"/>
     </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMensajes"
@@ -53,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:iconGravity="textEnd"
-            android:backgroundTint="@android:color/holo_orange_dark"
+            android:backgroundTint="#F77C63"
             app:icon="@drawable/send">
         </com.google.android.material.button.MaterialButton>
     </LinearLayout>

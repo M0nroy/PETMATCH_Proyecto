@@ -9,11 +9,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.ChildEventListener;
@@ -147,19 +149,28 @@ public class Chat extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == PHOTO_SEND && resultCode == RESULT_OK){
+        if (requestCode == PHOTO_SEND && resultCode == RESULT_OK) {
             Uri u = data.getData();
-            storageReference = storage.getReference("Imagenes_chat");
-            final StorageReference fotoReferencia = storageReference.child(u.getLastPathSegment());
-            fotoReferencia.putFile(u).addOnSuccessListener(this, new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
 
-                    Mensaje m = new Mensaje("Monroy te ha enviado una foto",u.toString(),nombre.getText().toString(),"","2","00:00");
-                    databaseReference.push().setValue(m);
+            if (!TextUtils.isEmpty(nombre.getText().toString())) {
+                SimpleDateFormat sdf = new SimpleDateFormat("hh:mm a", Locale.getDefault());
+                String horaActual = sdf.format(new Date());
 
-                }
-            });
+                storageReference = storage.getReference("Imagenes_chat");
+                final StorageReference fotoReferencia = storageReference.child(u.getLastPathSegment());
+
+                fotoReferencia.putFile(u).addOnSuccessListener(this, new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                    @Override
+                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                        Mensaje m = new Mensaje("Recibio una foto", u.toString(), nombre.getText().toString(), "", "2", horaActual);
+                        databaseReference.push().setValue(m);
+                    }
+                });
+
+            } else {
+                Toast.makeText(this, "El mensaje está vacío", Toast.LENGTH_SHORT).show();
+            }
         }
+
     }
 }

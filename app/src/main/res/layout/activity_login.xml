@@ -9,30 +9,27 @@
     android:background="@drawable/font2"
     tools:context=".Login">
 
-    <TextView
-        android:id="@+id/textView4"
+    <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="25dp"
-        android:layout_marginTop="260dp"
-        android:text="Bienvenido" />
+        android:layout_height="214dp"
+        android:layout_marginTop="220dp"
+        app:srcCompat="@drawable/logopet" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:boxBackgroundMode="outline"
+        android:layout_marginTop="20dp"
         app:endIconMode="clear_text"
         app:startIconDrawable="@drawable/person"
-        app:startIconTint="#FF8800">
+        app:startIconTint="#f77c63">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/box"
+            android:id="@+id/etCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Correo electronico"
-
-            />
+            android:hint="Correo electronico"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -40,23 +37,16 @@
         android:layout_height="wrap_content"
         app:boxBackgroundMode="outline"
         app:endIconMode="password_toggle"
-        app:endIconTint="#FF8800"
+        app:endIconTint="#f77c63"
         app:startIconDrawable="@drawable/lock"
-        app:startIconTint="#FF8800">
+        app:startIconTint="#f77c63">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Contraseña" />
     </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="textEnd"
-        android:layout_marginTop="10dp"
-        android:text="Has olvidado la contraseña?" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button4"
@@ -65,8 +55,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:backgroundTint="#F77C63"
-        android:text="@string/iniciar_sesion"
+        android:onClick="iniciarSesion"
+        android:text="Iniciar Sesion"
         app:icon="@drawable/login"
-        app:iconGravity="textEnd"
-        android:onClick="ValidarInicio"/>
+        app:iconGravity="textEnd" />
 </LinearLayout>

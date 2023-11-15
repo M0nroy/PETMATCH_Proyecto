@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PETMATCH</string>
+    <string name="app_name">PetMatch</string>
     <string name="title_activity_mejores_momentos">Mejores_momentos</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

@@ -23,6 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
+        android:backgroundTint="#F77C63"
         android:text="Reunirme" />
 
     <Button
@@ -30,10 +31,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:backgroundTint="#F77C63"
         android:text="Reunir mi mascota" />
 
     <Button
         android:id="@+id/button6"
+        android:backgroundTint="#F77C63"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -44,6 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:backgroundTint="#F77C63"
         app:icon="@drawable/next"
         app:iconGravity="textEnd"
         android:text="Siguiente"/>

@@ -19,7 +19,7 @@
                 android:id="@+id/fotoPerfilMensaje"
                 android:layout_width="24sp"
                 android:layout_height="24sp"
-                android:src="@mipmap/ic_launcher"/>
+                android:src="@drawable/dog"/>
 
         </LinearLayout>
 
@@ -37,7 +37,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Monroy"/>
+                    android:textColor="#F77C63"
+                    android:text="Petmatch"/>
                 <TextView
                     android:id="@+id/horaMensaje"
                     android:layout_width="wrap_content"

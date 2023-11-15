@@ -6,25 +6,25 @@
     android:layout_height="match_parent"
     android:background="#F77C63"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:padding="40dp"
     tools:context=".inicio">
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_marginTop="100dp"
-        app:srcCompat="@drawable/logopet" />
+        app:srcCompat="@drawable/logopet"
+        android:layout_marginTop="100dp"/>
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="Encuentra el alma gemela de tu mascota"
         android:textAlignment="center"
+        android:textSize="15dp"
         android:textColor="@color/black"
-        android:textSize="15dp" />
+        android:layout_marginTop="5dp"
+        android:text="Encuentra el alma gemela de tu mascota" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,27 +34,31 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button2"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
             android:layout_gravity="center"
+            android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:layout_marginRight="3dp"
-            android:onClick="iniciarSesion"
+            android:backgroundTint="@color/black"
             android:text="Iniciar Sesión"
+            android:onClick="iniciarSesion"
             app:icon="@drawable/login"
-            app:iconGravity="textEnd" />
+            app:iconGravity="textEnd"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button14"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
             android:layout_gravity="center"
+            android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
+            android:backgroundTint="@color/black"
             android:onClick="registraseU"
             android:text="Registrarse"
             app:icon="@drawable/resgister"
-            app:iconGravity="textEnd" />
+            app:iconGravity="textEnd"/>
     </LinearLayout>
+
+
 
 
 </LinearLayout>
