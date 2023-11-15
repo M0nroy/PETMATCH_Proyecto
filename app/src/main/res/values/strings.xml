@@ -45,4 +45,5 @@
     </string>
     <string name="title_activity_ver_usuarios">VerUsuarios</string>
     <string name="iniciar_sesion">Iniciar Sesion</string>
+    <string name="nombre_mascota">Nombre de la Mascota</string>
 </resources>

@@ -21,6 +21,7 @@
             android:layout_height="40dp"
             android:src="@drawable/atras" />
 
+
     </RelativeLayout>
 
     <!-- Contenido del perfil -->
@@ -46,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/petProfileImage"
-            android:text="Nombre de la Mascota"
+            android:text="@string/nombre_mascota"
             android:textSize="20sp"
             android:layout_marginTop="8dp"/>
 
