@@ -38,7 +38,7 @@ public class Login extends AppCompatActivity {
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if (currentUser != null) {
             // El usuario ya ha iniciado sesión, puedes redirigirlo a la pantalla de perfil directamente
-            Intent i = new Intent(getApplicationContext(), PerfilUsuario.class);
+            Intent i = new Intent(getApplicationContext(), Bienvenida .class);
             startActivity(i);
             finish();
         }
@@ -68,7 +68,7 @@ public class Login extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             Toast.makeText(getApplicationContext(), "Inicio correctamente", Toast.LENGTH_SHORT).show();
                             FirebaseUser user = mAuth.getCurrentUser();
-                            Intent i = new Intent(getApplicationContext(), PerfilUsuario.class);
+                            Intent i = new Intent(getApplicationContext(), Bienvenida.class);
                             startActivity(i);
                             limpiarCampos();
                             finish(); // Cerrar la actividad actual después de iniciar sesión

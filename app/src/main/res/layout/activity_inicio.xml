@@ -35,27 +35,27 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button2"
             android:layout_width="wrap_content"
-            android:layout_gravity="center"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:layout_marginRight="3dp"
             android:backgroundTint="@color/black"
-            android:text="Iniciar Sesión"
             android:onClick="iniciarSesion"
+            android:text="Iniciar Sesión"
             app:icon="@drawable/login"
-            app:iconGravity="textEnd"/>
+            app:iconGravity="textEnd" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button14"
             android:layout_width="wrap_content"
-            android:layout_gravity="center"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:backgroundTint="@color/black"
             android:onClick="registraseU"
             android:text="Registrarse"
             app:icon="@drawable/resgister"
-            app:iconGravity="textEnd"/>
+            app:iconGravity="textEnd" />
     </LinearLayout>
 
 

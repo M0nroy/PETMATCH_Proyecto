@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent;
                 if (currentUser != null) {
                     // Si hay un usuario autenticado, ir a PerfilUsuario
-                    intent = new Intent(MainActivity.this, PerfilUsuario.class);
+                    intent = new Intent(MainActivity.this, Bienvenida.class);
                 } else {
                     // Si no hay un usuario autenticado, ir a Login
                     intent = new Intent(MainActivity.this, Login.class);
