@@ -50,7 +50,18 @@ public class Login extends AppCompatActivity {
     }
 
     public void iniciarSesion(View view) {
-        mAuth.signInWithEmailAndPassword(correo.getText().toString().trim(), password.getText().toString().trim())
+        // Obtener los valores de los campos de correo y contraseña
+        String correoStr = correo.getText().toString().trim();
+        String passwordStr = password.getText().toString().trim();
+
+        // Verificar que los campos no estén vacíos
+        if (correoStr.isEmpty() || passwordStr.isEmpty()) {
+            Toast.makeText(getApplicationContext(), "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show();
+            return; // Salir del método si hay campos vacíos
+        }
+
+        // Continuar con el inicio de sesión si los campos no están vacíos
+        mAuth.signInWithEmailAndPassword(correoStr, passwordStr)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -67,4 +78,5 @@ public class Login extends AppCompatActivity {
                     }
                 });
     }
+
 }
