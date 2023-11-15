@@ -27,7 +27,7 @@
         app:startIconTint="#f77c63">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/box"
+            android:id="@+id/etCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Correo electronico"
@@ -45,6 +45,7 @@
         app:startIconTint="#f77c63">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Contraseña" />
@@ -62,11 +63,11 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:backgroundTint="#F77C63"
+        android:onClick="iniciarSesion"
         android:text="Iniciar Sesion"
         app:icon="@drawable/login"
-        app:iconGravity="textEnd"
-        />
+        app:iconGravity="textEnd" />
 </LinearLayout>

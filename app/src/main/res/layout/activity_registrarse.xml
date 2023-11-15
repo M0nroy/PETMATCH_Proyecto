@@ -86,15 +86,15 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-         android:id="@+id/btResgistrarse"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:text="Registrarse"
-         android:layout_marginTop="10dp"
-         android:layout_gravity="center"
-         app:icon="@drawable/resgister"
-         android:onClick="registrarse"
-         app:iconGravity="textEnd"
-         android:backgroundTint="#F77C63"/>
+        android:id="@+id/btResgistrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#F77C63"
+        android:onClick="registrarUsuario"
+        android:text="Registrarse"
+        app:icon="@drawable/resgister"
+        app:iconGravity="textEnd" />
 
 </LinearLayout>
