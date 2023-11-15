@@ -85,16 +85,34 @@
             android:hint="Contraseña" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btResgistrarse"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#F77C63"
-        android:onClick="registrarUsuario"
-        android:text="Registrarse"
-        app:icon="@drawable/resgister"
-        app:iconGravity="textEnd" />
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSeleccionarImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#F77C63"
+            android:onClick="seleccionarImagen"
+            android:text="Seleccionar imagen"
+            app:icon="@drawable/image"
+            app:iconGravity="textEnd" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btResgistrarse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#F77C63"
+            android:onClick="registrarUsuario"
+            android:text="Registrarse"
+            app:icon="@drawable/resgister"
+            app:iconGravity="textEnd" />
+
+    </LinearLayout>
 
 </LinearLayout>

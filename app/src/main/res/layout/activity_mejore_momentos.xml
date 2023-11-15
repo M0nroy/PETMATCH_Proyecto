@@ -25,7 +25,7 @@
         android:layout_marginTop="30dp">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imagePreview"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="104dp"
@@ -33,7 +33,7 @@
             app:srcCompat="@drawable/image" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/imagePreview2"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="104dp"
@@ -47,7 +47,7 @@
         android:layout_marginTop="30dp">
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/imagePreview3"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="104dp"
@@ -55,40 +55,52 @@
             app:srcCompat="@drawable/image" />
 
         <ImageView
-            android:id="@+id/imageView7"
+            android:id="@+id/imagePreview4"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="104dp"
             app:srcCompat="@drawable/image" />
+
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="352dp"
         android:layout_height="92dp"
         android:layout_marginTop="40dp"
         android:orientation="horizontal">
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSeleccionarImg"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginEnd="8dp"
-            android:text="Seleccionar imagen"
             android:backgroundTint="#F77C63"
+            android:text="Imagen"
             app:icon="@drawable/image"
             app:iconGravity="textEnd" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="0dp"
             android:layout_height="55dp"
-            android:layout_weight="1"
             android:layout_marginTop="7dp"
-            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#F77C63"
             android:onClick="omitir"
             android:text="Omitir"
             app:icon="@drawable/skip"
-            app:iconGravity="textEnd"
-            android:backgroundTint="#F77C63"/>
+            app:iconGravity="textEnd" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubir"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:backgroundTint="#F77C63"
+            android:onClick="subir"
+            android:text="Subir"
+            app:icon="@drawable/upload"
+            app:iconGravity="textEnd" />
     </LinearLayout>
 
 </LinearLayout>

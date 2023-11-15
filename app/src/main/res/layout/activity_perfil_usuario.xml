@@ -25,6 +25,7 @@
             android:textSize="30sp"/>
 
         <ImageView
+            android:id="@+id/fotoUsuario"
             android:layout_width="92dp"
             android:layout_height="84dp"
             android:layout_gravity="center"
