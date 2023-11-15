@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/font2"
+    tools:context=".PerfilMascota">
+
+    <!-- Barra superior con botón de retroceso -->
+    <RelativeLayout
+        android:id="@+id/profileHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/atras" />
+
+    </RelativeLayout>
+
+    <!-- Contenido del perfil -->
+    <RelativeLayout
+        android:id="@+id/profileContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileHeader"
+        android:padding="16dp">
+
+        <!-- Foto, nombre, raza y edad -->
+        <ImageView
+            android:id="@+id/petProfileImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/pets" />
+
+        <TextView
+            android:id="@+id/petProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/petProfileImage"
+            android:text="Nombre de la Mascota"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/petProfileBreed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/petProfileName"
+            android:text="Raza"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/petProfileAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/petProfileBreed"
+            android:text="Edad"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Botones de vacunas y certificados -->
+        <Button
+            android:id="@+id/vaccinesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/petProfileAge"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:text="Vacunas" />
+
+        <Button
+            android:id="@+id/certificatesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/petProfileAge"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="21dp"
+            android:layout_toEndOf="@id/vaccinesButton"
+            android:gravity="center"
+            android:text="Certificados" />
+
+    </RelativeLayout>
+
+    <!-- Botón de seguir y enviar mensajes -->
+    <RelativeLayout
+        android:id="@+id/profileButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileContent"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/followButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seguir"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/messageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Enviar Mensajes"
+            android:layout_below="@id/followButton"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <!-- Botón cambiante con opciones -->
+    <RelativeLayout
+        android:id="@+id/optionsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileButtons"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/changeableButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Publicaciones"
+                android:background="#1976D2"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/reviewsButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reseñas"
+                android:background="#1976D2"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- Publicaciones del perfil -->
+    <RelativeLayout
+        android:id="@+id/profilePosts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/optionsButton"
+        android:padding="16dp">
+
+        <!-- Puedes agregar aquí elementos para mostrar las publicaciones (fotos, videos, etc.) -->
+
+    </RelativeLayout>
+
+</LinearLayout>

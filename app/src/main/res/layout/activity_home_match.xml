@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_main.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/font2">
+
+    <RelativeLayout
+        android:id="@+id/cardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/discoverText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descubrir"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/searchIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/search" />
+
+        <!-- Tarjeta principal -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="40dp"
+            android:elevation="8dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="16dp">
+
+            <!-- Contenido de la tarjeta -->
+            <ImageView
+                android:id="@+id/petImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pets" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="40dp"
+                android:padding="16dp">
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Información de la mascota -->
+        <RelativeLayout
+            android:id="@+id/petInfoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardView"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:id="@+id/petNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buddy"
+                android:textColor="#333333"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/petBreedTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/petNameTextView"
+                android:text="Golden Retriever"
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/petAgeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/petBreedTextView"
+                android:text="2 años"
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/petCertificationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/petAgeTextView"
+                android:text="Certificado"
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+            <!-- Botón "Ver Perfil" a la par de la información -->
+            <Button
+                android:id="@+id/viewProfileButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/petCertificationTextView"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="40dp"
+                android:background="#1976D2"
+                android:text="Ver Perfil"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <!-- Botones de Match e Ignorar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/petInfoLayout"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/ignoreButton"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:background="#FF5252"
+                android:text="X"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/matchButton"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:background="#4CAF50"
+                android:text="♥"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
