@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.petmatch.databinding.ActivityBienvenidaBinding;
-import com.example.petmatch.databinding.ActivityMainBinding;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Bienvenida extends AppCompatActivity {
@@ -32,6 +31,11 @@ public class Bienvenida extends AppCompatActivity {
             }
             else if( item.getItemId()==R.id.salir){
                 cerrarSesion();
+            } else if (item.getItemId()==R.id.irChat) {
+                Intent intent;
+                    // Si hay un usuario autenticado, ir a PerfilUsuario
+                    intent = new Intent(Bienvenida.this, Chat.class);
+                    startActivity(intent);
             }
             return true;
         });
