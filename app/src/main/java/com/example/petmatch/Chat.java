@@ -63,9 +63,10 @@ public class Chat extends AppCompatActivity {
         btnEnviarFoto = (ImageButton) findViewById(R.id.btnEnviarFoto);
 
         database = FirebaseDatabase.getInstance();
-        databaseReference = database.getReference("chat");
+        databaseReference = database.getReference("usuarios/chat");
 
         storage = FirebaseStorage.getInstance();
+        storageReference= storage.getReference();
 
         adapter = new AdapterMensajes(this);
         LinearLayoutManager l = new LinearLayoutManager(this);
