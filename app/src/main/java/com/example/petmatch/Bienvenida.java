@@ -36,6 +36,11 @@ public class Bienvenida extends AppCompatActivity {
                     // Si hay un usuario autenticado, ir a PerfilUsuario
                     intent = new Intent(Bienvenida.this, Chat.class);
                     startActivity(intent);
+            } else if (item.getItemId()==R.id.mi_mascota) {
+                Intent intent;
+                // Si hay un usuario autenticado, ir a PerfilUsuario
+                intent = new Intent(Bienvenida.this, PerfilMascota.class);
+                startActivity(intent);
             }
             return true;
         });
