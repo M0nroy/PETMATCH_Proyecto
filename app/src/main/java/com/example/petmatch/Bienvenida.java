@@ -20,7 +20,7 @@ public class Bienvenida extends AppCompatActivity {
 
         mainBinding = ActivityBienvenidaBinding.inflate(getLayoutInflater());
         setContentView(mainBinding.getRoot());
-        replaceFragment();
+        replaceFragment(new myprofileFragment());
         mainBinding.bottomNavigationView.setOnItemSelectedListener(item->
         {
 

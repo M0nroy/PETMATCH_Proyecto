@@ -14,6 +14,10 @@
         android:title="Mi perfil"
         android:icon="@drawable/person" />
     <item
+        android:id="@+id/irChat"
+        android:title="chat"
+        android:icon="@drawable/email" />
+    <item
         android:id="@+id/salir"
         android:title="Salir"
         android:icon="@drawable/exit" />
